@@ -10,35 +10,20 @@
         <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     </head>
-    <body class="animated fadeIn delay-1s">
-        <a href="https://www.dittopr.co/" target="blank"><img id="ditto-logo" src="./ditto.png" alt="ditto-logo" /></a>   
-        <form id="survey">
-
-        </form> 
-
-        <!-- <div id="question-container">   -->
-            <!-- <img class="arrows back" src="./back.png" alt="back-arrow" /> -->
-            <!-- <div id="question">
-                <p id="question-number-text"></p>
-                <p id="question-text"></p>
-                <input id="answer-input" type="text">
-            </div> -->
-            <!-- <img class="arrows forward" src="./forward.png" alt="forward-arrow" /> -->
-        <!-- </div> -->
+    <body class="animated fadeIn">
+        <a href="https://www.dittopr.co/" target="blank"><img id="ditto-logo" src="./ditto.png" alt="ditto-logo" /></a>  
+        <p id="percentage">0%</p> 
+        <div id="main-container">
+            <!-- <button class="arrow-button back"> -->
+                <img class="arrows back" src="./back.png" alt="back-arrow" />
+            <!-- </button> -->
+            <form id="survey">
+            </form> 
+            <!-- <button class="arrow-button forward"> -->
+                <img class="arrows forward" src="./forward.png" alt="forward-arrow" />
+            <!-- </button> -->
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script src="script.js" async defer></script>
     </body>
-    <Style>
-        @keyframes slideInFromLeft {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        html {
-            animation: 1s ease-out 3s 1 slideInfromLeft;
-        }
-    </Style>
 </html>
