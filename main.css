@@ -12,6 +12,19 @@ body {
     background-color: rgb(254, 203, 0);
 }
 
+#ditto-logo {
+   transform: scale(.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: -40px;
+   margin-top: -20px;
+}
+
+#survey {
+    margin: 80px 0;
+}
+
 #question-container {
     display: flex;
     flex-direction: row;
@@ -24,9 +37,10 @@ body {
 
 #question {
     background-color: rgb(226, 226, 226);
-    width: 600px;
-    height: 400px;
-    border-radius: 4px;
+    width: 500px;
+    /* border-radius: 4px; */
+    padding: 10px;
+    height: fit-content;
 }
 
 .arrows {
@@ -41,6 +55,92 @@ body {
     visibility: hidden;
 }
 
+#question-number-text {
+    text-align: center;
+    margin-top: -60px;
+    font-size: 30px;
+}
+
 #question-text {
     text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#answer-input {
+    background-color: rgb(226, 226, 226);
+    width: 80%;
+    height: 30px;
+    display: inline-block;
+    font-size: 20px;
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    padding: 5px;
+    transition: .2s;
+}
+
+#answer-input:hover {
+    background-color: rgb(204, 204, 204);
+    transition: .2s;
+}
+
+#answer-input:focus {
+    background-color: whitesmoke;
+    transition: .2s;
+}
+
+#survey div:last-of-type div input[type="text"] {
+    margin-bottom: 50px;
+}
+
+#survey {
+    text-align: center;
+}
+
+#radio-div {
+    text-align: left;
+    margin-left: 12px;
+}
+
+#submit-button {
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(74, 74, 74);
+    transition: .2s;
+    margin-right: 438px;
+    margin-top: 30px;
+}
+
+#submit-button:hover {
+    background: none;
+    border: 1px solid rgb(74, 74, 74);
+    color: black;
+    background-color: rgba(74, 74, 74, 0);
+    transition: .2s;
+}
+
+label {
+    margin-left: 3.5px;
+    cursor: pointer;
+}
+
+/* label:hover {
+    background-color: rgb(74, 74, 74);
+    color: white;
+} */
+
+.input-div {
+    display: inline-block;
+    width: 80%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.input-div:hover {
+    background-color: rgb(74, 74, 74);
+    color: white;
 }

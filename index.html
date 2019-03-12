@@ -8,14 +8,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     </head>
-    <body>
-        <p id="question-text"></p>
-        <div id="question-container">  
-            <img class="arrows back" src="./back.png" alt="back-arrow" />
-            <div id="question"></div>
-            <img class="arrows forward" src="./forward.png" alt="forward-arrow" />
-        </div>
+    <body class="animated fadeIn delay-1s">
+        <a href="https://www.dittopr.co/" target="blank"><img id="ditto-logo" src="./ditto.png" alt="ditto-logo" /></a>   
+        <form id="survey">
+
+        </form> 
+
+        <!-- <div id="question-container">   -->
+            <!-- <img class="arrows back" src="./back.png" alt="back-arrow" /> -->
+            <!-- <div id="question">
+                <p id="question-number-text"></p>
+                <p id="question-text"></p>
+                <input id="answer-input" type="text">
+            </div> -->
+            <!-- <img class="arrows forward" src="./forward.png" alt="forward-arrow" /> -->
+        <!-- </div> -->
     <script src="script.js" async defer></script>
     </body>
+    <Style>
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        html {
+            animation: 1s ease-out 3s 1 slideInfromLeft;
+        }
+    </Style>
 </html>
